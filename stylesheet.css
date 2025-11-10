@@ -1417,6 +1417,7 @@ audio {
 	.balloons {
 		width: 80px;
 		height: 150px;
+		background-size: 80px 150px;
 	}
 	.balloons h2 {
 		font-size: 36px;
@@ -1451,6 +1452,7 @@ audio {
 	.balloons {
 		width: 56px;
 		height: 105px;
+		background-size: 56px 105px;
 	}
 	.balloons h2 {
 		font-size: 26px;
