@@ -1449,11 +1449,11 @@ audio {
 		overflow-x: hidden;
 	}
 	.balloons {
-		width: 68px;
-		height: 125px;
+		width: 56px;
+		height: 105px;
 	}
 	.balloons h2 {
-		font-size: 30px;
+		font-size: 26px;
 		text-shadow: 3px 3px 4px #FFF;
 	}
 	.message {
