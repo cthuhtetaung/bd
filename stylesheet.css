@@ -1409,6 +1409,129 @@ audio {
 		transform: translateY(-59vh) scale(1.05);
 	}
 }
+
+@media (max-width: 991px) {
+	.balloon-border{
+		opacity: 0.4;
+	}
+	.balloons {
+		width: 80px;
+		height: 150px;
+	}
+	.balloons h2 {
+		font-size: 36px;
+	}
+	.message {
+		margin-top: 160px;
+	}
+	.message p {
+		font-size: 24px;
+	}
+	.navbar.navbar-fixed-bottom {
+		padding: 16px 16px 24px;
+	}
+	.action-buttons {
+		gap: 18px;
+	}
+	.photo-balloon-wrapper {
+		gap: 48px;
+		padding: 0 6%;
+	}
+	.photo-balloon {
+		width: 180px;
+		height: 240px;
+		border-radius: 28px;
+	}
+}
+
+@media (max-width: 600px) {
+	body {
+		overflow-x: hidden;
+	}
+	.balloons {
+		width: 68px;
+		height: 125px;
+	}
+	.balloons h2 {
+		font-size: 30px;
+		text-shadow: 3px 3px 4px #FFF;
+	}
+	.message {
+		margin-top: 120px;
+		padding: 0 16px;
+	}
+	.message p {
+		font-size: 18px;
+		line-height: 1.6;
+	}
+	.navbar.navbar-fixed-bottom {
+		padding: 18px 14px 26px;
+	}
+	.navbar.navbar-fixed-bottom .row {
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
+		width: 100%;
+	}
+	.action-buttons {
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
+		width: 100%;
+		padding: 10px 0 0;
+	}
+	.btn-primary {
+		min-width: 0;
+		width: 100%;
+		max-width: 280px;
+		font-size: 14px;
+		letter-spacing: 0.03em;
+		padding: 12px 18px;
+	}
+	.photo-balloon-wrapper {
+		bottom: -20px;
+		flex-wrap: wrap;
+		gap: 18px;
+		padding: 0 10%;
+	}
+	.photo-balloon {
+		width: clamp(92px, 42vw, 150px);
+		height: clamp(130px, 54vw, 200px);
+		border-radius: 22px;
+		box-shadow: 0 16px 28px rgba(0,0,0,0.28);
+	}
+	.photo-balloon-wrapper.active .photo-balloon {
+		animation: photo_balloon_rise_mobile 16s ease-in-out forwards, photo_balloon_float_mobile 7s ease-in-out 16s infinite alternate;
+	}
+	@keyframes photo_balloon_rise_mobile {
+		0% {
+			transform: translateY(120vh) scale(0.8);
+			opacity: 0;
+		}
+		18% {
+			opacity: 1;
+		}
+		100% {
+			transform: translateY(-48vh) scale(1.02);
+			opacity: 1;
+		}
+	}
+	@keyframes photo_balloon_float_mobile {
+		0% {
+			transform: translateY(-48vh) scale(1.02);
+		}
+		100% {
+			transform: translateY(-52vh) scale(1.05);
+		}
+	}
+	.cake {
+		transform: scale(0.85);
+		transform-origin: center top;
+	}
+	.balloon-border{
+		top: 110%;
+	}
+}
 .control-panel {
 	position: fixed;
 	bottom: 0;
